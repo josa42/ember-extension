@@ -16,6 +16,7 @@
   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
   "devtools_page": "devtools.html",
   "content_scripts": [{
+    "all_frames": true,
     "matches": ["<all_urls>"],
     "js": ["content-script.js"],
     "run_at": "document_end"
